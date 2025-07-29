@@ -144,7 +144,7 @@ export default function MarketingAboutStory() {
                                             color="primary"
                                             size="medium"
                                             variant="contained"
-                                            href='https://mesdash.wise-choice.net/auth/jwt/sign-up/'
+                                            href='https://app.mescolis.ca/auth/api/sign-up/'
                                             sx={{ flexShrink: 0 }}
                                         >
                                             {trans('p_how_it_works_step_1_button')}

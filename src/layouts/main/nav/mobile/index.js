@@ -59,7 +59,7 @@ export default function NavMobile({ data }) {
                     <Stack spacing={1.5} sx={{ p: 3 }}>
 
                         <Button
-                            href='https://mesdash.wise-choice.net/'
+                            href='https://app.mescolis.ca/auth/api/sign-in/'
                             variant="outlined"
                             rel="noopener"
                         >
@@ -70,7 +70,7 @@ export default function NavMobile({ data }) {
                             fullWidth
                             variant="contained"
                             color="inherit"
-                            href='https://mesdash.wise-choice.net/auth/jwt/sign-up/'
+                            href='https://app.mescolis.ca/auth/api/sign-up/'
                             rel="noopener"
                         >
                             {trans('sign_up')}

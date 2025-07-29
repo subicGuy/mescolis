@@ -99,7 +99,7 @@ export default function Header({ headerOnDark }) {
                 <LanguagePopover data={langs} currentlanguage={language} onSelectLanguage={changeLanguage} />
 
                 <Button
-                    href='https://mesdash.wise-choice.net/'
+                    href='https://app.mescolis.ca/auth/api/sign-in/'
                     variant="outlined"
                     rel="noopener"
                     sx={{
@@ -112,7 +112,7 @@ export default function Header({ headerOnDark }) {
                 <Button
                     variant="contained"
                     color="inherit"
-                    href='https://mesdash.wise-choice.net/auth/jwt/sign-up/'
+                    href='https://app.mescolis.ca/auth/api/sign-up/'
                     rel="noopener"
                     sx={{
                         display: { xs: 'none', md: 'inline-flex' },
