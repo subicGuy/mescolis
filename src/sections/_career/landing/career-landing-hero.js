@@ -5,6 +5,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
+import Button from '@mui/material/Button';
 
 import { useTabs } from 'src/hooks/use-tabs';
 import { useResponsive } from 'src/hooks/use-responsive';
@@ -120,8 +121,26 @@ export default function CareerLandingHero() {
                                 <Typography variant="h4" sx={{ color: 'lightgray' }}>
                                     {trans('home_hero_discount_text')}
                                 </Typography>
+                                
                                 {renderTabs}
                                 {renderFilters}
+
+                                {/* Show button only on mobile */}
+                                {!mdUp && (
+                                    <Button
+                                        fullWidth
+                                        variant="contained"
+                                        color="inherit"
+                                        href='https://app.mescolis.ca/auth/api/sign-up/'
+                                        rel="noopener"
+                                        sx={{ mt: 2,py: 1.5, }}
+                                    >
+                                        {trans('sign_up')}
+                                    </Button>
+                                )}
+
+
+
                             </Stack>
 
                             {/* {renderBrands} */}
