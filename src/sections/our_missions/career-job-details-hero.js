@@ -85,9 +85,17 @@ export default function CareerJobDetailsHero({ job }) {
                 sx={{ width: '100%', py: 2.5, mx: 'auto', bgcolor: 'background.neutral' }}
             >
                 <Stack spacing={2} alignItems="center" sx={{ width: 1, maxWidth: 340, mx: 'auto' }}>
-                    <Button fullWidth variant="contained" size="large" color="primary" onClick={handleClickOpen}>
+                    <Button 
+                            fullWidth variant="contained" 
+                            size="large" 
+                            color="primary"
+                            onClick={() => window.open('https://app.mescolis.ca/', '_blank')}
+                    >
                         {trans('p_our_mission_hero_button')}
                     </Button>
+                    {/* <Button fullWidth variant="contained" size="large" color="primary" onClick={handleClickOpen}>
+                        {trans('p_our_mission_hero_button')}
+                    </Button> */}
                 </Stack>
             </Stack>
 

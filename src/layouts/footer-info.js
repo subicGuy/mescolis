@@ -46,7 +46,7 @@ export default function MarketingNewsletter({ sx, ...other }) {
                         </Stack>
                     </Stack>
 
-                    <TextField
+                    {/* <TextField
                         fullWidth
                         hiddenLabel
                         placeholder={trans('footer_info_button_placeholder')}
@@ -71,7 +71,18 @@ export default function MarketingNewsletter({ sx, ...other }) {
                             sx: { pr: 0 },
                         }}
                         sx={{ maxWidth: 466 }}
-                    />
+                    /> */}
+                    <Button
+                        size="large"
+                        color="inherit"
+                        variant="contained"
+                        sx={{
+                            height: 54,
+                        }}
+                        onClick={() => window.open('https://app.mescolis.ca/auth/api/sign-up/', '_blank')}
+                    >
+                        {trans('footer_info_button')}
+                    </Button>
                 </Stack>
             </Container>
         </Box>

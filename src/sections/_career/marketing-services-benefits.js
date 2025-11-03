@@ -414,7 +414,7 @@ export default function MarketingServicesBenefits() {
                         size="large"
                         variant="outlined"
                         sx={{ mt: 5 }}
-                        onClick={handleClickOpen}
+                        onClick={() => window.open('https://app.mescolis.ca/', '_blank')}
                     >
                         {trans('home_benefits_button')}
                     </Button>

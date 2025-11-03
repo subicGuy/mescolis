@@ -74,7 +74,7 @@ export default function CareerJobDetailsHero({ job }) {
                                 fullWidth variant="contained" 
                                 size="large" 
                                 color="primary"
-                                onClick={handleClickOpen}
+                                onClick={() => window.open('https://app.mescolis.ca/', '_blank')}
                             >
                                 {trans('p_how_it_works_hero_button')}
                             </Button>

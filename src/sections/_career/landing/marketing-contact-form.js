@@ -138,12 +138,12 @@ export default function MarketingContactForm() {
 
             </Stack>
 
-            <LoadingButton
+          <LoadingButton
                 size="medium"
                 color="inherit"
-                type="submit"
+                type="button"  // Change from "submit" to "button"
                 variant="contained"
-                loading={isSubmitting}
+                onClick={() => window.open('https://app.mescolis.ca/', '_blank')}
                 sx={{ mt: 3, mb: 1 }}
             >
                 {trans('home_form_get_quote')}

@@ -108,7 +108,7 @@ export default function MarketingAbout() {
                         size="large"
                         endIcon={<Iconify icon="carbon:chevron-right" />}
                         sx={{ mt: 3 }}
-                        onClick={handleClickOpen}
+                        onClick={() => window.open('https://app.mescolis.ca/', '_blank')}
                     >
                         {trans('home_info_button')}
                     </Button>
@@ -117,7 +117,7 @@ export default function MarketingAbout() {
 
             {/* Modal Implementation */}
             {open && <GetQuoteModal isOpen={open} onClose={handleClose} />}
-        
+
         </Container>
     );
 }
