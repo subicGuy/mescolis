@@ -90,6 +90,9 @@ export default function Footer() {
                             <Link href='/faq' variant="body2" sx={{ color: 'text.primary' }}>
                                 {trans('footer_quick_links_5')}
                             </Link>
+                            <Link href='/privacy-policy' variant="body2" sx={{ color: 'text.primary' }}>
+                                {trans('footer_quick_links_6')}
+                            </Link>
                         </Stack>
                     </Grid>
 

@@ -3,13 +3,9 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import InputAdornment from '@mui/material/InputAdornment';
-
 import { useTranslation } from 'src/contexts/TranslationContext';
-
 import SvgColor from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
