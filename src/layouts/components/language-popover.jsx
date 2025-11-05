@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 
 import Popover from '@mui/material/Popover';
 import MenuList from '@mui/material/MenuList';
@@ -17,16 +17,13 @@ import { FlagIcon } from 'src/components/iconify';
 export function LanguagePopover({ data = [], sx, ...other }) {
   const openLangs = usePopover();
 
-  const { changeLanguage } = useTranslation();
+  const { changeLanguage, language } = useTranslation();
 
-  const [locale, setLocale] = useState(data[0].value);
-
-  const currentLang = data.find((lang) => lang.value === locale);
+  const currentLang = data.find((lang) => lang.value === language);
 
   const handleChangeLang = useCallback(
     (newLang) => {
       changeLanguage(newLang);
-      setLocale(newLang);
       openLangs.onClose();
     },
     [openLangs, changeLanguage]
