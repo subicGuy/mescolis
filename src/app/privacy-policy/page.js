@@ -3,7 +3,7 @@ import PrivacyPolicy from 'src/sections/privacy-policy/view/PrivacyPolicy';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Our Mission',
+  title: 'Privacy Policy',
 };
 
 export default function OurMissionPage() {
