@@ -63,13 +63,14 @@ export default function CareerLandingHero() {
                 borderRadius: 1,
                 marginTop: 2,
                 marginBottom: 1,
+                color: 'grey.200',
                 '& .Mui-selected': {
                     color: 'white',
                 },
             }}
         >
             {TABS.map((tab) => (
-                <Tab key={tab.value} value={tab.value} label={tab.label} sx={{ fontWeight: 400 }} />
+                <Tab key={tab.value} value={tab.value} label={tab.label} sx={{ fontWeight: 400, color: 'inherit' }} />
             ))}
         </CustomTabs>
     );
@@ -79,10 +80,8 @@ export default function CareerLandingHero() {
         <Box
             sx={{
                 ...bgGradient({
-                    color: mdUp
-                        ? alpha(theme.palette.grey[900], 0.8) // Darker color on larger screens
-                        : alpha(theme.palette.grey[400], 0.4), // Lighter color on mobile
-                    imgUrl: '/assets/background/overlay_2.jpg',
+                    color: alpha(theme.palette.background.default, 0.9),
+                    imgUrl: '/assets/background/overlay_1.jpg',
                 }),
                 pt: 15,
                 overflow: 'hidden',
@@ -115,10 +114,10 @@ export default function CareerLandingHero() {
                                         MesColis
                                     </Box>
                                 </Typography>
-                                <Typography variant="h3" sx={{ color: 'common.white' }}>
+                                <Typography variant="h3" sx={{ color: 'grey.800' }}>
                                     {trans('home_hero_subtitle')}
                                 </Typography>
-                                <Typography variant="h4" sx={{ color: 'lightgray' }}>
+                                <Typography variant="h4" sx={{ color: 'grey.600' }}>
                                     {trans('home_hero_discount_text')}
                                 </Typography>
                                 
