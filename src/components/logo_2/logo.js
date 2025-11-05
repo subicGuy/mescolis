@@ -20,11 +20,11 @@ function Logo({ single = false, isScrolled = false, sx }) {
 
   // Conditionally set logo based on whether on the homepage or not
   const logoSrc = isHomePage && !isScrolled
-    ? '/assets/logo/mescolis_title_only_white.png'
+    ? '/assets/logo/mescolis_title_only_black.png'
     : '/assets/logo/mescolis_title_only_black.png';
 
   const singleLogoSrc = isHomePage && !isScrolled
-    ? '/assets/logo/mescolis_white_logo_single.png'
+    ? '/assets/logo/mescolis_black_logo_single.png'
     : '/assets/logo/mescolis_black_logo_single.png';
 
   const singleLogo = (

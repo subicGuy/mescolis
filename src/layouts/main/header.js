@@ -48,6 +48,7 @@ export default function Header({ headerOnDark }) {
                         // height: 1,
                         display: { xs: 'none', md: 'flex' },
                         mr: 4,
+                        color: 'grey.800',
                     }}
                 >
                     <NavBasicDesktop
@@ -96,7 +97,7 @@ export default function Header({ headerOnDark }) {
 
             <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
 
-                <LanguagePopover data={langs} currentlanguage={language} onSelectLanguage={changeLanguage} />
+                <LanguagePopover data={langs} currentLanguage={language} onSelectLanguage={changeLanguage} />
 
                 <Button
                     href='https://app.mescolis.ca/auth/api/sign-in/'
@@ -104,6 +105,7 @@ export default function Header({ headerOnDark }) {
                     rel="noopener"
                     sx={{
                         display: { xs: 'none', md: 'inline-flex' },
+                        color: 'grey.800'
                     }}
                 >
                     {trans('sign_in')}
@@ -149,7 +151,9 @@ export default function Header({ headerOnDark }) {
     );
 
     return (
-        <AppBar>
+        <AppBar sx={{ 
+            boxShadow: offset ? theme.customShadows.z4 : 'none'
+        }}>
             <Toolbar
                 disableGutters
                 sx={{

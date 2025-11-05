@@ -37,7 +37,7 @@ export default function NavMobile({ data }) {
 
     return (
         <>
-            <IconButton onClick={mobileOpen.onTrue} sx={{ ml: 1, color: 'inherit' }}>
+            <IconButton onClick={mobileOpen.onTrue} sx={{ ml: 1, color: 'grey.800' }}>
                 <Iconify icon="carbon:menu" />
             </IconButton>
 
